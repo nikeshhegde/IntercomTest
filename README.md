@@ -101,6 +101,13 @@ You can see the following output in the output.txt generated
  User Id: 39 Full Name : Lisa Ahearn
 ```
 
+# How to test this project
+
+Run this command in the terminal to test using JUnit Test Cases
+```bash
+mvn test
+```
+
 ## Author
 Nikesh Hegde
 
