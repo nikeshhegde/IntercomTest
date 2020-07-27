@@ -63,7 +63,6 @@ public class CustomerService {
 			
 			double officeLatitide = Constants.DUBLIN_OFFICE_LATITUDE;
 			double officeLongitude = Constants.DUBLIN_OFFICE_LONGITUDE;
-			String unit = Constants.DISTANCE_UNIT;
 			
 			// get the customers who are in range
 			List<Customer> customersInRange = getCustomersWithinDistance(customers, validRange, officeLatitide, officeLongitude);
