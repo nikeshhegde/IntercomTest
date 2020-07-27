@@ -18,7 +18,7 @@ public class CalculateDistanceTest {
 	 * Test the program with custom data given in line
 	 */
 	@Test
-	public void getCustomersWithinDistance() {
+	public void getCustomersWithinDistanceTest() {
 
 		List<Customer> customersToFilter = new ArrayList<>();
 		customersToFilter.add(new Customer(2, "Christina", 53.2451022d, -6.238335d));
@@ -45,7 +45,7 @@ public class CalculateDistanceTest {
 	 * JSON data
 	 */
 	@Test
-	public void processCustomerData() {
+	public void processCustomerDataTest() {
 
 		List<Customer> customers = CustomerService.processCustomerData(Constants.DEFAULT_JSON_TXT_FILE_INPUT_URL,
 				Constants.DEFAULT_VALID_RANGE_IN_KM);
@@ -59,7 +59,7 @@ public class CalculateDistanceTest {
 	 * Test the behavior of the program for any string of URL
 	 */
 	@Test
-	public void processCustomerDataError() {
+	public void processCustomerDataErrorTest() {
 
 		List<Customer> customers = CustomerService.processCustomerData(
 				"Junk url which has no data. Just a string value", Constants.DEFAULT_VALID_RANGE_IN_KM);

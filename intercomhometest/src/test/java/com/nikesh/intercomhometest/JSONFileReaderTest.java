@@ -19,7 +19,7 @@ import com.nikesh.intercomhometest.utils.JsonFileReader;
 public class JSONFileReaderTest {
 
 	 @Test
-	    public void getCustomers() throws IOException {
+	    public void getCustomersTest() throws IOException {
 
 	        String exampleString = "{\"latitude\": \"52.986375\", \"user_id\": 12, \"name\": \"Christina McArdle\", \"longitude\": \"-6.043701\"}\n" +
 	                "{\"latitude\": \"51.92893\", \"user_id\": 1, \"name\": \"Alice Cahill\", \"longitude\": \"-10.27699\"}\n" +
@@ -35,7 +35,7 @@ public class JSONFileReaderTest {
 	    }
 
 	    @Test
-	    public void getCustomersListFromJsonList() throws JSONException {
+	    public void getCustomersListFromJsonListTest() throws JSONException {
 
 	        List<JSONObject> customerJsonObjects = new ArrayList<>();
 
