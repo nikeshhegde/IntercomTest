@@ -11,9 +11,9 @@
 	</parent>
 	<groupId>com.nikesh</groupId>
 	<artifactId>intercomhometest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${intercomhometest.version}</version>
 	<name>intercomhometest</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Calculate the customers according to GPS coordinates form JSON file and output the data</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -54,8 +54,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<release>10</release>
-				</configuration>
+			      <source>1.8</source>
+			      <target>1.8</target>
+			   </configuration>
 			</plugin>
 		</plugins>
 	</build>
