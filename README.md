@@ -47,8 +47,40 @@ This will use Maven to download the required dependencies, and build an executab
 You can now execute the project by navigating inside the target folder and running this command
 
 ```bash
-java -jar target/
+java -jar target/intercomhometest.jar
 ```
+
+You will see the following output in terminal
+```bash
+No active profile set, falling back to default profiles: default
+2020-07-27 19:26:50.285  INFO 29248 --- [           main] c.n.i.IntercomhometestApplication        : Started IntercomhometestApplication in 1.566 seconds (JVM running for 2.51)
+2020-07-27 19:26:50.291  INFO 29248 --- [           main] c.n.i.utils.CustomerService              : Getting List of customers within 100.0km Range
+2020-07-27 19:26:50.291  INFO 29248 --- [           main] c.n.i.utils.CustomerService              : Reading Customer data from https://s3.amazonaws.com/intercom-take-home-test/customers.txt
+2020-07-27 19:26:53.401  INFO 29248 --- [           main] c.n.i.utils.CustomerService              : Total no of customers in file 32, from which 16 are within a 100.0km Range.
+2020-07-27 19:26:53.405  INFO 29248 --- [           main] c.n.i.utils.CustomerService              : List of customers in range:
+
+ User Id: 4 Full Name : Ian Kehoe
+ User Id: 5 Full Name : Nora Dempsey
+ User Id: 6 Full Name : Theresa Enright
+ User Id: 8 Full Name : Eoin Ahearn
+ User Id: 11 Full Name : Richard Finnegan
+ User Id: 12 Full Name : Christina McArdle
+ User Id: 13 Full Name : Olive Ahearn
+ User Id: 15 Full Name : Michael Ahearn
+ User Id: 17 Full Name : Patricia Cahill
+ User Id: 23 Full Name : Eoin Gallagher
+ User Id: 24 Full Name : Rose Enright
+ User Id: 26 Full Name : Stephen McArdle
+ User Id: 29 Full Name : Oliver Ahearn
+ User Id: 30 Full Name : Nick Enright
+ User Id: 31 Full Name : Alan Behan
+ User Id: 39 Full Name : Lisa Ahearn
+
+2020-07-27 19:26:53.408  INFO 29248 --- [           main] c.n.i.utils.CustomerService              : Reading the values from StringBuilder
+2020-07-27 19:26:53.432  INFO 29248 --- [           main] c.n.i.utils.CustomerService              : The values was succesfully written to a file output.txt
+```
+
+
 You can see the following output in the output.txt generated
 ```bash
  User Id: 4 Full Name : Ian Kehoe
