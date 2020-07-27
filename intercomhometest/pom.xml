@@ -13,7 +13,7 @@
 	<artifactId>intercomhometest</artifactId>
 	<version>${intercomhometest.version}</version>
 	<name>intercomhometest</name>
-	<description>Calculate the customers according to GPS coordinates form JSON file and output the data</description>
+	<description>Calculate the customers according to GPS coordinates form JSON file and output the values</description>
 
 	<properties>
 		<java.version>1.8</java.version>
